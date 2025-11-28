@@ -4,7 +4,7 @@ This is the repository of my little coding and crafting project. I created class
 
 The class itself is in a string_art.py file and notebook tutorial.ipynb demonstrates the basic functionality. File development_notebook.ipynb is my notebook that I used for development and debugging.
 
-Here is the example of an original image:
+Here is the example of an image that I decided to turn into string art:
 
 <img src="https://github.com/otheiner/thread_art/blob/main/assets/photo.png" width="450">
 
