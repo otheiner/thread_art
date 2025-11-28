@@ -12,11 +12,10 @@ import os
 class StringArt:
     def __init__(self,
                  radius=1.0,
-                 center=(0, 0),
                  number_of_lines = 10,
                  number_of_nails = 10):
         self.radius = radius
-        self.center = center
+        self.center = (0, 0)
         self.number_of_nails = number_of_nails # number of nails
         self.number_of_lines = number_of_lines
         self.nails = None  # nails positions
@@ -96,6 +95,7 @@ class StringArt:
     def set_image(self, path_to_image, size=500):
         self.image_size = size
         self._image_array = self._process_image(path_to_image)
+        self.set_frame(self.number_of_nails)
         return 0
 
     def set_forbidden_mask(self, path_to_mask):
@@ -280,12 +280,15 @@ class StringArt:
 
     # algorithm to compute the string path
     def compute_string(self,
-                       print_interval = 50,
+                       print_interval = 500,
                        tested_nails = None,
                        mask_weight = 6 ,
                        use_forbidden_areas = False,
                        allow_crossing_lines = False,
                        crossing_lines_acceptance = 0.2):
+
+        # initialize new empty sequence and discard the old one
+        self.string_sequence = np.array([0])
 
         if tested_nails is None:
             tested_nails = self.number_of_nails
