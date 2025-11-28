@@ -19,14 +19,14 @@ class StringArt:
         self.number_of_nails = number_of_nails # number of nails
         self.number_of_lines = number_of_lines
         self.nails = None  # nails positions
-        self._nails_pix_x_positions = None  # nails pixel positions
-        self._nails_pix_y_positions = None  # nails pixel positions
         self.string_sequence = np.array([0]) # string path
         self.string_length = None
+        self.image_size = None
+        self._nails_pix_x_positions = None  # nails pixel positions
+        self._nails_pix_y_positions = None  # nails pixel positions
         self._ax = None # shared axes
         self._image_array = None
         self._forbidden_mask_array = None
-        self.image_size = None
         self._line_masks = None
 
     def _position_to_pixel(self, x,y):
