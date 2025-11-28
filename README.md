@@ -56,7 +56,7 @@ And this is the snippet of the instuctions which nails to connect for the first 
 [110  62 112  64 115]
 ```
 
-I can also generate images which has hole in them (this is me with open mouth), so one can get a little bit creative. The way of doing it is decribed in the tutorial notebook.
+I can also generate images which have hole in them (this is me with open mouth), so one can get a little bit creative. The way of doing it is decribed in the tutorial notebook.
 
 <img src="https://github.com/otheiner/thread_art/blob/main/assets/open_mouth.png" width="450">
 
